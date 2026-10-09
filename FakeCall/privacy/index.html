@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – Fake Call</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.75;
+            color: #1a1a1a;
+            background: #ffffff;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 32px 20px 48px;
+        }
+        h1 { font-size: 26px; color: #0E57C4; margin-bottom: 4px; }
+        .meta { font-size: 13px; color: #777; margin-bottom: 32px; }
+        h2 { font-size: 17px; font-weight: 700; color: #0E57C4; margin: 32px 0 10px; border-bottom: 1px solid #e3ecf7; padding-bottom: 4px; }
+        p { margin-bottom: 14px; }
+        ul { margin: 6px 0 14px 22px; }
+        li { margin-bottom: 8px; }
+        strong { font-weight: 600; }
+        a { color: #0E57C4; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .highlight {
+            background: #f0f6ff;
+            border-left: 4px solid #0E57C4;
+            padding: 12px 16px;
+            border-radius: 0 6px 6px 0;
+            margin-bottom: 14px;
+        }
+        .footer {
+            margin-top: 48px;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">
+    App: <strong>Fake Call – Prank Call App</strong><br>
+    Developer: <strong>PrankMaster</strong><br>
+    Effective date: <strong>June 28, 2026</strong><br>
+    Last updated: <strong>June 28, 2026</strong>
+</p>
+
+<div class="highlight">
+    <strong>Summary:</strong> Fake Call does not collect, store, or share any of your personal data with us or any third party. All data stays on your device only.
+</div>
+
+<h2>1. About This Policy</h2>
+<p>
+    PrankMaster ("we", "us", "our") built the <strong>Fake Call – Prank Call App</strong> as a free Android application. This Privacy Policy describes how we handle information when you use our app. By using the app, you agree to the practices described here.
+</p>
+
+<h2>2. Information We Access</h2>
+<p>
+    The app does <strong>not</strong> collect or transmit personal information to any server. The following data is accessed or stored <em>locally on your device only</em>:
+</p>
+<ul>
+    <li>
+        <strong>Contact names and phone numbers</strong> – You may manually type a caller name and number, or pick a contact from your address book. This information is stored in the app's local database solely to display on the fake-call screen. It is never uploaded or shared.
+    </li>
+    <li>
+        <strong>Fake call history</strong> – The app keeps a local log of fake calls you have made, answered, or rejected. This log is stored in an on-device database (Room/SQLite) and is never sent anywhere.
+    </li>
+    <li>
+        <strong>App settings</strong> – Your ringtone selection, dark mode preference, and scheduled alarm times are saved in Android SharedPreferences on your device only.
+    </li>
+</ul>
+
+<h2>3. Permissions Explained</h2>
+<ul>
+    <li>
+        <strong>READ_CONTACTS</strong> – Allows you to pick a contact from your address book to use as the fake caller. Contacts data is never read in bulk, stored permanently, or transmitted off-device.
+    </li>
+    <li>
+        <strong>SCHEDULE_EXACT_ALARM</strong> – Used to fire the fake call at precisely the time you scheduled. The alarm is managed entirely by your device's AlarmManager.
+    </li>
+    <li>
+        <strong>SYSTEM_ALERT_WINDOW</strong> – Displays the incoming-call overlay on top of other apps when your device is shaken. Required for the shake-to-call feature to work from the background.
+    </li>
+    <li>
+        <strong>FOREGROUND_SERVICE</strong> – Keeps the shake-detection service running with a persistent, visible notification so you know it is active. You can stop it at any time from the notification.
+    </li>
+    <li>
+        <strong>POST_NOTIFICATIONS</strong> – Shows the shake-service notification (Android 13+). No marketing or promotional notifications are sent.
+    </li>
+    <li>
+        <strong>RECEIVE_BOOT_COMPLETED</strong> – Restores any pending scheduled alarms after your device restarts, so a call you scheduled still arrives on time.
+    </li>
+    <li>
+        <strong>VIBRATE &amp; WAKE_LOCK</strong> – Simulates the vibration and screen-on behavior of a real incoming call for a convincing prank.
+    </li>
+</ul>
+
+<h2>4. Data Storage &amp; Retention</h2>
+<p>
+    All data (call history, saved contacts, settings) is stored locally on your device using Android's Room database and SharedPreferences. We have no access to this data. You can:
+</p>
+<ul>
+    <li>Delete individual history entries from the History screen in the app.</li>
+    <li>Remove all app data via Android Settings → Apps → Fake Call → Clear Data.</li>
+    <li>Uninstall the app to permanently delete all locally stored data.</li>
+</ul>
+
+<h2>5. Third-Party Libraries</h2>
+<p>
+    The app uses the following open-source libraries, all of which operate entirely on-device:
+</p>
+<ul>
+    <li><strong>Glide</strong> – Image loading library used to display contact photos. It does not send any data to external servers.</li>
+    <li><strong>Room (AndroidX)</strong> – Local database library for storing call history on your device.</li>
+</ul>
+<p>
+    The app does <strong>not</strong> include any advertising SDKs, analytics SDKs, crash-reporting services, or user-tracking libraries.
+</p>
+
+<h2>6. Internet Access</h2>
+<p>
+    The app does <strong>not</strong> require an internet connection to function and does not make network requests. The internet permission is not declared in the app manifest. Cleartext (HTTP) traffic is explicitly disabled.
+</p>
+
+<h2>7. Children's Privacy</h2>
+<p>
+    This app is a prank/entertainment tool intended for users aged 13 and older. It is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has used this app to store personal information, please contact us and we will help you remove it from the device.
+</p>
+
+<h2>8. Your Rights</h2>
+<p>
+    Because all data is stored locally on your device and is never transmitted to us, we do not hold any personal data about you that we could provide, correct, or delete on our end. All control over your data lies entirely with you on your device.
+</p>
+
+<h2>9. Changes to This Policy</h2>
+<p>
+    We may update this Privacy Policy to reflect changes in the app. When we do, we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of the app after any changes constitutes acceptance of the updated policy.
+</p>
+
+<h2>10. Contact Us</h2>
+<p>
+    If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us at:
+</p>
+<p>
+    <strong>Email:</strong> <a href="mailto:moreshubham504@gmail.com">moreshubham504@gmail.com</a>
+</p>
+
+<div class="footer">
+    &copy; 2026 PrankMaster. All rights reserved.<br>
+    Fake Call – Prank Call App
+</div>
+
+</body>
+</html>
