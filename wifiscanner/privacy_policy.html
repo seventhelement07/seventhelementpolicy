@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WifiQRScanner Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1c2230;
+    --muted: #5a6475;
+    --line: #dde2ea;
+    --accent: #1f5fd6;
+    --code-bg: #eef2f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161d;
+      --text: #e6eaf2;
+      --muted: #9aa5b8;
+      --line: #2a3140;
+      --accent: #7aa7ff;
+      --code-bg: #1d2431;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 1.15rem; margin: 2.2rem 0 0.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+  p, li { max-width: 65ch; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.4rem; }
+  .meta { color: var(--muted); font-size: 0.92rem; margin: 0 0 1.5rem; }
+  code { background: var(--code-bg); padding: 1px 6px; border-radius: 4px; font-size: 0.88em; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>WifiQRScanner Privacy Policy</h1>
+<p class="meta">
+  Effective: October 9, 2026<br>
+  Applies to package: <code>com.wifipassword.wifiqrscanner</code>
+</p>
+
+<p>WifiQRScanner scans Wi-Fi QR codes, lets you create your own, and keeps a history on your phone. We run no servers and have no user accounts. The app does not send your Wi-Fi names or passwords to us or to anyone else. One Google component, described in section 4, can send technical diagnostics to Google.</p>
+
+<h2>1. What the app handles</h2>
+<p>When you scan or create a Wi-Fi QR code, the app stores the following in a database on your phone:</p>
+<ul>
+  <li>Network name (SSID) and password</li>
+  <li>Security type (WPA/WPA2/WPA3/WEP/open) and whether the network is hidden</li>
+  <li>The text of the QR code itself</li>
+  <li>The date and time you saved it, whether you marked it as a favorite, and whether it was scanned or generated</li>
+  <li>A label, if you choose to type one</li>
+</ul>
+<p>The app also keeps one on-device setting recording that you have seen the first-launch permission screen.</p>
+<p>Two other things are read on your device and are not stored: the name of the Wi-Fi network you are currently connected to (to pre-fill the generator, only if you grant location permission), and the names of nearby Wi-Fi networks (to show an &ldquo;In Range&rdquo; badge on saved networks).</p>
+<p>The app does not ask for your name, email, phone number or an advertising ID.</p>
+
+<h2>2. Where it is stored</h2>
+<p>Your history is saved in the app's private storage on your phone. It is protected by Android's app sandbox but is not additionally encrypted, so anyone with access to an unlocked or rooted device could read it. Saved networks are excluded from Android's automatic cloud backup and device-to-device transfer, so your Wi-Fi passwords are not copied to your Google account backup.</p>
+<p>When you scan a code, the app also hands that network to Android's Wi-Fi system so your phone can connect (as a network suggestion on Android 10 and later, or as a saved network on older versions). From then on, Android manages that entry; you can remove it in your phone's Wi-Fi settings.</p>
+
+<h2>3. Permissions, and why</h2>
+<p>Each permission exists for one visible feature. None are used for advertising.</p>
+<ul>
+  <li><code>CAMERA</code>: scanning a Wi-Fi QR code you point the camera at. Camera images are processed on your device and are not saved.</li>
+  <li><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>: Android requires location permission before an app can read nearby Wi-Fi networks or connect to one. The app does not record, store or transmit your location.</li>
+  <li><code>NEARBY_WIFI_DEVICES</code>: used on Android 13 and later to connect to Wi-Fi networks. It is declared <code>neverForLocation</code>, meaning it is not used to work out where you are.</li>
+  <li><code>ACCESS_WIFI_STATE</code> / <code>CHANGE_WIFI_STATE</code> / <code>ACCESS_NETWORK_STATE</code>: reading your current network and joining a network from a scanned code.</li>
+  <li><code>READ_MEDIA_IMAGES</code> / <code>READ_MEDIA_VISUAL_USER_SELECTED</code> / <code>READ_EXTERNAL_STORAGE</code>: only if you choose to scan a QR code from a photo, on Android 13 and older. On Android 14 and later the system photo picker is used instead and no permission is needed.</li>
+  <li><code>WRITE_EXTERNAL_STORAGE</code> (Android 9 and older only): only if you tap &ldquo;Save image&rdquo; to save a generated QR code to your photos.</li>
+  <li><code>INTERNET</code>: declared by a bundled library (see section 4). The app's own code makes no network requests.</li>
+</ul>
+
+<h2>4. Third-party components</h2>
+<p><strong>Google ML Kit (barcode scanning).</strong> When you pick a photo to scan, the app uses Google's ML Kit to find the QR code in it. The image is analysed on your device and is not uploaded by the app. ML Kit is a Google component, though, and it may send technical information to Google, such as the library version, your device model and Android version, and performance statistics. It may also fetch or update its scanning model through Google Play services. This information does not include your Wi-Fi names, passwords or the photo itself. See <a href="https://developers.google.com/ml-kit/terms">Google's ML Kit terms</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+<p><strong>Live camera scanning and QR generation</strong> use open-source libraries (a camera scanner library and ZXing) that run entirely on your device.</p>
+<p>The app contains no advertising and no analytics or crash-reporting service of ours.</p>
+
+<h2>5. Sharing</h2>
+<p>We do not sell or share your saved networks, passwords or history. Your data leaves the app only when you choose to send it:</p>
+<ul>
+  <li>Tapping &ldquo;Share&rdquo; sends a network's details or QR image to the app you pick.</li>
+  <li>Tapping to copy a password or network name places it on your phone's clipboard, where other apps or clipboard history features may be able to read it.</li>
+  <li>Saving a QR code image puts a file containing your Wi-Fi details in your photo library.</li>
+  <li>Some buttons open a page in your browser: this privacy policy, and your router's admin page. Your browser, not this app, handles those requests.</li>
+</ul>
+
+<h2>6. Deleting your data</h2>
+<ul>
+  <li>Swipe an entry away in History to delete it (an Undo option appears briefly), or use the delete-all button.</li>
+  <li>Uninstalling the app, or clearing its storage in Android settings, deletes the database. Nothing is held on a server by us.</li>
+  <li>Images you saved or shared, and entries Android saved for Wi-Fi, are outside the app and must be removed from your gallery or Wi-Fi settings.</li>
+</ul>
+
+<h2>7. Children</h2>
+<p>WifiQRScanner is a general-purpose utility and is not directed at children. We do not knowingly collect personal information from anyone.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>If this policy changes, we will update the date at the top of this page.</p>
+
+<h2>9. Contact</h2>
+<p>Questions about this policy or your data: <a href="mailto:moreshubham504@gmail.com">moreshubham504@gmail.com</a></p>
+
+</main>
+</body>
+</html>
