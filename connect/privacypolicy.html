@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connect — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Connect Android app. Connect has no internet permission; your contacts, reminders and call counts stay on your device.">
+<meta name="theme-color" content="#0079c2">
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: one reading column, max 44rem, with full-width tinted bands for the
+     summary and footer. Accent is the app's own app-bar blue (#0079c2). */
+  :root {
+    --bg: #fbfbfc;
+    --surface: #ffffff;
+    --band: #eef3f7;
+    --fg: #15191e;
+    --fg-muted: #5a6572;
+    --rule: #dbe2e9;
+    --accent: #0079c2;
+    --accent-soft: #e4f0f8;
+    --fill: #fff3cd;
+    --fill-fg: #5c4a03;
+
+    --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10141a;
+      --surface: #161c24;
+      --band: #1a222c;
+      --fg: #e7ecf2;
+      --fg-muted: #9aa7b5;
+      --rule: #2a3542;
+      --accent: #5bb4ea;
+      --accent-soft: #15293a;
+      --fill: #3d3414;
+      --fill-fg: #f0dca0;
+      color-scheme: dark;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img { max-width: 100%; }
+
+  .wrap {
+    max-width: 44rem;
+    margin-inline: auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  /* ---- masthead ---- */
+  .masthead { background: var(--accent); color: #fff; }
+  .masthead .wrap { padding-block: 2.75rem 2.25rem; }
+  .eyebrow {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.82;
+    margin: 0 0 0.6rem;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2rem, 6vw, 2.75rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .dates {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    margin: 1.1rem 0 0;
+    opacity: 0.9;
+  }
+
+  /* ---- summary band ---- */
+  .summary { background: var(--band); border-bottom: 1px solid var(--rule); }
+  .summary .wrap { padding-block: 1.75rem; }
+  .summary h2 {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--fg-muted);
+    margin: 0 0 0.9rem;
+    font-weight: 600;
+  }
+  .points { display: grid; gap: 0.7rem; margin: 0; padding: 0; list-style: none; }
+  .points li {
+    display: grid;
+    grid-template-columns: 1.4rem 1fr;
+    gap: 0.6rem;
+    align-items: start;
+    min-width: 0;
+  }
+  .points svg { width: 1.15rem; height: 1.15rem; margin-top: 0.3rem; color: var(--accent); }
+  .points strong { font-weight: 600; }
+
+  /* ---- body ---- */
+  main .wrap { padding-block: 2.5rem 3.5rem; }
+  section + section { margin-top: 2.5rem; }
+  h2.rule {
+    font-family: var(--font-display);
+    font-size: 1.1875rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.85rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--rule);
+    text-wrap: balance;
+  }
+  h2.rule .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    margin-right: 0.5rem;
+  }
+  p { margin: 0 0 0.9rem; }
+  p:last-child { margin-bottom: 0; }
+  ul.plain { margin: 0 0 0.9rem; padding-left: 1.15rem; }
+  ul.plain li { margin-bottom: 0.35rem; }
+  a { color: var(--accent); }
+  a:focus-visible, .copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.8125em;
+    background: var(--accent-soft);
+    color: var(--fg);
+    padding: 0.1em 0.38em;
+    border-radius: 3px;
+    word-break: break-word;
+  }
+
+  .fill {
+    background: var(--fill);
+    color: var(--fill-fg);
+    font-family: var(--font-mono);
+    font-size: 0.8125em;
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+    font-weight: 500;
+  }
+
+  /* ---- tables ---- */
+  .tablewrap {
+    overflow-x: auto;
+    margin: 0 0 1rem;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    background: var(--surface);
+  }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9375rem; }
+  th, td { text-align: left; padding: 0.7rem 0.85rem; vertical-align: top; border-bottom: 1px solid var(--rule); }
+  tbody tr:last-child td { border-bottom: 0; }
+  th {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--fg-muted);
+    background: var(--band);
+    white-space: nowrap;
+  }
+  td:first-child { white-space: nowrap; }
+  @media (max-width: 520px) { td:first-child { white-space: normal; } }
+
+  /* ---- never-list ---- */
+  .never { display: grid; gap: 0.55rem; margin: 0; padding: 0; list-style: none; }
+  .never li {
+    display: grid;
+    grid-template-columns: 1.1rem 1fr;
+    gap: 0.6rem;
+    align-items: start;
+    min-width: 0;
+  }
+  .never svg { width: 1rem; height: 1rem; margin-top: 0.35rem; color: var(--fg-muted); }
+
+  .note {
+    border-left: 3px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 0.9rem 1rem;
+    border-radius: 0 5px 5px 0;
+    margin: 1.1rem 0;
+  }
+  .note p { margin: 0; font-size: 0.9375rem; }
+
+  footer { border-top: 1px solid var(--rule); background: var(--band); }
+  footer .wrap { padding-block: 1.75rem 2.25rem; }
+  footer p { font-size: 0.875rem; color: var(--fg-muted); margin: 0; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Connect for Android</p>
+    <h1>Privacy Policy</h1>
+    <p class="dates">Effective 23 October 2026 &nbsp;·&nbsp; Last updated 23 October 2026</p>
+  </div>
+</header>
+
+<div class="summary">
+  <div class="wrap">
+    <h2>The short version</h2>
+    <ul class="points">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <span><strong>Connect has no internet access.</strong> The app does not request the <code>INTERNET</code> permission, so it is not technically capable of sending your information anywhere.</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <span><strong>Everything stays on your phone.</strong> Your contacts, reminders and call counts are saved in a database on the device and are never uploaded.</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <span><strong>No accounts, no analytics, no ads.</strong> There is no sign-up, no tracking, no advertising and no third-party analytics or crash-reporting service in the app.</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <span><strong>Uninstalling deletes everything.</strong> Removing Connect removes its database with it. Nothing is left behind on a server, because nothing was ever sent to one.</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <section>
+      <h2 class="rule"><span class="num">1</span>Who this policy is from</h2>
+      <p>
+        Connect is an Android app published by <span class="fill">[YOUR NAME OR COMPANY]</span>
+        (&ldquo;we&rdquo;, &ldquo;us&rdquo;). This policy explains what the app does with information on
+        your device. It applies to the Connect app distributed through Google Play under the package
+        name <code>com.callscheduler.connect</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="rule"><span class="num">2</span>What Connect does</h2>
+      <p>
+        Connect helps you stay in touch with people. You pick contacts from your phone, mark them as
+        favourites, and set reminders to call them &mdash; daily, weekly, monthly, or on a specific
+        date. When a reminder is due, the app shows a notification. Tapping it opens your phone&rsquo;s
+        dialer with the number filled in.
+      </p>
+      <div class="note">
+        <p>
+          Connect does not place calls itself. It opens your normal dialer with the number ready, and
+          you decide whether to press call. The app does not hold the <code>CALL_PHONE</code>
+          permission.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="rule"><span class="num">3</span>Information stored on your device</h2>
+      <p>
+        All of the following is written to a private database inside the app&rsquo;s own storage area on
+        your phone. Other apps cannot read it, and it is never transmitted.
+      </p>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr><th scope="col">What</th><th scope="col">Details stored</th><th scope="col">Why</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Favourites</td>
+              <td>Name, phone number and the contact&rsquo;s system ID, for each contact you add</td>
+              <td>So the app can show your chosen people and attach reminders to them</td>
+            </tr>
+            <tr>
+              <td>Reminders</td>
+              <td>Which favourite, how often it repeats, the time of day, and when it is next due</td>
+              <td>So the reminder can be scheduled and shown at the right time</td>
+            </tr>
+            <tr>
+              <td>Call history</td>
+              <td>Name, phone number, how many times you opened the dialer for that person, and when you last did</td>
+              <td>So the History tab can show who you contact most often</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        This history is Connect&rsquo;s own count of times you tapped to call from inside the app. It is
+        <strong>not</strong> your phone&rsquo;s call log: Connect cannot see whether a call actually
+        happened, how long it lasted, or any call you made outside the app.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="rule"><span class="num">4</span>Permissions the app requests</h2>
+      <p>Connect requests three permissions and no others.</p>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Permission</th><th scope="col">What it is used for</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>READ_CONTACTS</code></td>
+              <td>
+                To show your contact list inside the app so you can choose who to be reminded about.
+                Contacts are read on the device and shown to you. Only the contacts you explicitly
+                mark as favourites are saved by Connect; the rest are read and discarded. Nothing is
+                written back to your contacts, and nothing is uploaded.
+              </td>
+            </tr>
+            <tr>
+              <td><code>POST_NOTIFICATIONS</code></td>
+              <td>
+                To show the reminder notification when a scheduled call is due. If you decline this
+                permission, the app still works but cannot remind you.
+              </td>
+            </tr>
+            <tr>
+              <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+              <td>
+                To re-register your reminders after the phone restarts. Android discards scheduled
+                alarms on reboot, so without this your reminders would silently stop after you
+                restart your phone.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        You can withdraw contacts or notification permission at any time in Android Settings. The app
+        keeps working; the parts that depend on the permission stop.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="rule"><span class="num">5</span>What Connect does not do</h2>
+      <ul class="never">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>It does not send any information off your device. It has no network permission.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>It does not use analytics, advertising, tracking or crash-reporting services.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>It does not create an account or ask for an email address, and it has no login.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>It does not read your call log, SMS messages, location, camera, microphone or files.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>It does not record calls and cannot hear or see anything about a call you make.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>It does not modify, add or delete anything in your phone&rsquo;s contacts.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="rule"><span class="num">6</span>Sharing and selling</h2>
+      <p>
+        Connect shares no personal information with anyone, because it collects none to a server and
+        has no way to transmit it. We do not sell, rent or trade any data. There are no third-party
+        SDKs embedded in the app.
+      </p>
+      <p>
+        The one time information leaves Connect is when you tap a reminder and the app hands the phone
+        number to your dialer app, at your request. From that point your dialer and your mobile
+        network operator handle the call under their own terms.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="rule"><span class="num">7</span>Backups</h2>
+      <p>
+        Connect&rsquo;s database is deliberately excluded from Android&rsquo;s automatic cloud backup and from
+        device-to-device transfer. Your favourites, reminders and history are not copied to Google
+        Drive and do not move to a new phone. If you switch devices or reinstall the app, you will set
+        your reminders up again.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="rule"><span class="num">8</span>How long information is kept, and how to delete it</h2>
+      <p>Everything is kept on your device until you remove it. You are always in control:</p>
+      <ul class="plain">
+        <li>Delete one reminder by pressing and holding it in the <strong>Scheduled</strong> tab.</li>
+        <li>Remove a favourite in the <strong>Favorites</strong> tab; its reminders are deleted with it.</li>
+        <li>Delete a history entry by pressing and holding it in the <strong>History</strong> tab.</li>
+        <li>Clear everything at once with <em>Settings &rsaquo; Apps &rsaquo; Connect &rsaquo; Storage &rsaquo; Clear data</em>.</li>
+        <li>Uninstalling the app deletes its database entirely.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="rule"><span class="num">9</span>Children</h2>
+      <p>
+        Connect is a general-audience utility and is not directed at children. It collects nothing to
+        a server from anyone, of any age.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="rule"><span class="num">10</span>Your rights</h2>
+      <p>
+        Privacy laws such as the GDPR and similar regimes give you rights to access, correct, export
+        and erase personal data held about you. Because Connect holds no data about you on any server
+        and we have no copy of anything, there is nothing for us to retrieve or erase on your behalf.
+        The data is in your hands on your own device, and section 8 explains how to remove it.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="rule"><span class="num">11</span>Changes to this policy</h2>
+      <p>
+        If the app changes in a way that affects this policy &mdash; for example if a future version
+        added a sync or backup feature &mdash; we will update this page and change the
+        &ldquo;Last updated&rdquo; date above before the new version is released. Material changes
+        will be noted in the app&rsquo;s release notes on Google Play.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="rule"><span class="num">12</span>Contact</h2>
+      <p>
+        Questions about this policy or about privacy in Connect can be sent to
+        <a href="mailto:moreshubham504@gmail.com">moreshubham504@gmail.com</a>.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>
+      Connect &mdash; <code>com.callscheduler.connect</code> &nbsp;·&nbsp; Android 10 and above
+      &nbsp;·&nbsp;
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
