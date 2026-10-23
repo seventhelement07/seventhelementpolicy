@@ -47,7 +47,7 @@
 
 <h1>WifiQRScanner Privacy Policy</h1>
 <p class="meta">
-  Effective: October 9, 2026<br>
+  Effective: October 23, 2026<br>
   Applies to package: <code>com.wifipassword.wifiqrscanner</code>
 </p>
 
@@ -67,8 +67,8 @@
 <p>The app does not ask for your name, email, phone number or an advertising ID.</p>
 
 <h2>2. Where it is stored</h2>
-<p>Your history is saved in the app's private storage on your phone. It is protected by Android's app sandbox but is not additionally encrypted, so anyone with access to an unlocked or rooted device could read it. Saved networks are excluded from Android's automatic cloud backup and device-to-device transfer, so your Wi-Fi passwords are not copied to your Google account backup.</p>
-<p>When you scan a code, the app also hands that network to Android's Wi-Fi system so your phone can connect (as a network suggestion on Android 10 and later, or as a saved network on older versions). From then on, Android manages that entry; you can remove it in your phone's Wi-Fi settings.</p>
+<p>Your history is saved in the app's private storage on your phone. Saved passwords (and the QR code text, which contains the password) are encrypted with a key held in the Android Keystore. Network names, labels and other details are stored unencrypted, protected only by Android's app sandbox, so anyone with access to an unlocked or rooted device could read those. Saved networks are excluded from Android's automatic cloud backup and device-to-device transfer, so your Wi-Fi passwords are not copied to your Google account backup.</p>
+<p>When you scan a code, the app also hands that network to Android's Wi-Fi system so your phone can connect (as a network suggestion). From then on, Android manages that entry; you can remove it in your phone's Wi-Fi settings.</p>
 
 <h2>3. Permissions, and why</h2>
 <p>Each permission exists for one visible feature. None are used for advertising.</p>
@@ -78,7 +78,7 @@
   <li><code>NEARBY_WIFI_DEVICES</code>: used on Android 13 and later to connect to Wi-Fi networks. It is declared <code>neverForLocation</code>, meaning it is not used to work out where you are.</li>
   <li><code>ACCESS_WIFI_STATE</code> / <code>CHANGE_WIFI_STATE</code> / <code>ACCESS_NETWORK_STATE</code>: reading your current network and joining a network from a scanned code.</li>
   <li><code>READ_MEDIA_IMAGES</code> / <code>READ_MEDIA_VISUAL_USER_SELECTED</code> / <code>READ_EXTERNAL_STORAGE</code>: only if you choose to scan a QR code from a photo, on Android 13 and older. On Android 14 and later the system photo picker is used instead and no permission is needed.</li>
-  <li><code>WRITE_EXTERNAL_STORAGE</code> (Android 9 and older only): only if you tap &ldquo;Save image&rdquo; to save a generated QR code to your photos.</li>
+  <li>Saving a generated QR code image to your photos needs no permission; Android's media library handles it.</li>
   <li><code>INTERNET</code>: declared by a bundled library (see section 4). The app's own code makes no network requests.</li>
 </ul>
 
